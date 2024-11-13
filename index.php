@@ -1,4 +1,4 @@
 <?php
 // Include the HTML file
-include 'gcinet.html';
+include 'server.html';
 ?>
